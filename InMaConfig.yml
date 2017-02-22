@@ -49,7 +49,7 @@ ailServer:
   backup-host: ISLVOZSD01.scisb.isban.corp
   backup-port: 2020
   appType: server
-  app-name: STP_iWD_ISBAN8_SDK_Server_15
+  app-name: STP_iWD_ISBAN8_SDK_Server_6
   user: 
   password: 
   period: 30
