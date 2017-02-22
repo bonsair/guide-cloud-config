@@ -1,57 +1,6 @@
-spring:
-  application:
-    name: INMA
-  cache:
-    jcache:
-      config: ehcache3.xml
-  jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: true
-    hibernate:
-      ddl-auto: validate    
-    properties:
-      hibernate:
-        default_schema: test
-        temp.use_jdbc_metadata_defaults: false
-  datasource:
-    platform: postgresql
-    url: jdbc:postgresql://180.113.69.24:5432/BED_CTBP
-    username: postgres
-    password: p1234  
+configuration:  
+  projectName: configclient
 server:
-    port: 8085   
-inxServer:
-  host: ISLMAILD01.scisb.isban.corp
-  port: 6130
-  tenantId: 102
-  inboundQueue: Twitter Agent Queue
-configServer:
-  host: ISLCOMUD01.scisb.isban.corp
-  port: 2020
-  clientName: default
-  user: SDK_CONFIG
-  password: SDK_CONFIG
-contactServer:
-  host: 
-  port: 0
-  tenantId: 0
-  clientName: 
-ailServer:
-  host: ISLCOMUD01.scisb.isban.corp
-  port: 2020
-  backup-host: ISLVOZSD01.scisb.isban.corp
-  backup-port: 2020
-  appType: server
-  app-name: STP_iWD_ISBAN8_SDK_Server_6
-  user: 
-  password: 
-  period: 30
-  timeout: 60 
-information:
-  routePoints: RoutePoints
-eureka:
- client:
-   service-url:
-     defaultZone: http://127.0.0.1:9000/eureka
-inma:
-  cors.allowed.origins: http://localhost:8082
+  port: 8000
+message:
+  greeting: Hello from the configuration!
